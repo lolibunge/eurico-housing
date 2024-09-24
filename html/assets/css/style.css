@@ -454,6 +454,11 @@ Headers:		'Montserrat', sans-serif;
   pointer-events: none;
 }
 
+footer#page-footer {
+  display: flex;
+  align-items: center;
+}
+
 /* 2. Elements Styling */
 body {
   color: #1f1f1f;

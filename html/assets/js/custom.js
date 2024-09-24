@@ -48,13 +48,13 @@ $(document).ready(function($) {
         $(".page-wrapper").removeClass("show-navigation");
     });
 
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 1 ) {
-            $(".navigation").addClass("show-background");
-        } else {
-            $(".navigation").removeClass("show-background");
-        }
-    });
+    // $(window).scroll(function () {
+    //     if ($(window).scrollTop() > 1 ) {
+    //         $(".navigation").addClass("show-background");
+    //     } else {
+    //         $(".navigation").removeClass("show-background");
+    //     }
+    // });
 
 //  Responsive Video Scaling
 
@@ -388,3 +388,23 @@ function equalHeight(container){
         }
     });
 }
+
+
+document.querySelectorAll('.toggle-info').forEach(toggle => {
+    toggle.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        const extraInfo = this.previousElementSibling.querySelector('.extra-info'); // Get the corresponding extra-info
+        
+        // Toggle visibility
+        if (extraInfo.style.display === "none" || extraInfo.style.display === "") {
+            extraInfo.style.display = "block"; // Show the additional information
+            this.textContent = 'Mostrar menos'; // Change the button text
+        } else {
+            extraInfo.style.display = "none"; // Hide the additional information
+            this.textContent = this.getAttribute('data-original-text'); // Restore the original text
+        }
+    });
+    
+    // Store the original text in a data attribute
+    toggle.setAttribute('data-original-text', toggle.textContent);
+});

@@ -36,10 +36,10 @@ Headers:		'Montserrat', sans-serif;
   z-index: 99;
 }
 .navigation.show-background {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #d6cfc8;
 }
 .navigation.show-background:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #d6cfc8;
 }
 .navigation.nav-btn-only .nav-btn {
   display: block;
@@ -142,7 +142,7 @@ Headers:		'Montserrat', sans-serif;
   content: "";
   width: 0%;
   height: 2px;
-  background-color: #fff;
+  background-color: #000;
 }
 .navigation .right .navigation-links li a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -688,10 +688,10 @@ ul.check-marks li:before {
   color: #fff;
 }
 .background-is-dark a {
-  color: #fff;
+  color: #000;
 }
 .background-is-dark a:hover, .background-is-dark a:active, .background-is-dark a:focus {
-  color: #fff;
+  color: #000;
 }
 .background-is-dark a.btn-default {
   color: #000;
@@ -709,7 +709,7 @@ ul.check-marks li:before {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .background-is-dark .panel-group .panel .panel-heading:after {
-  color: #fff;
+  color: #000;
 }
 .background-is-dark .stage {
   position: relative;
@@ -811,10 +811,10 @@ ul.check-marks li:before {
   z-index: -2;
 }
 .background-wrapper .background-color.background-color-white {
-  background-color: #fff;
+  background-color: #f1eeeb;
 }
 .background-wrapper .background-color.background-color-black {
-  background-color: #000;
+  background-color: #2e2e2e;
 }
 
 .bg-transfer {
@@ -1594,6 +1594,7 @@ ul.check-marks li:before {
 .feature h3 {
   font-size: 20px;
   margin-bottom: 20px;
+  min-height: 44px;
 }
 .feature p {
   margin-top: 15px;
@@ -1608,6 +1609,15 @@ ul.check-marks li:before {
   padding-left: 50px;
   padding-top: 20px;
 }
+.feature.has-icon .description .extra-info {
+  margin-top: 0px; /* Espacio entre párrafos */
+  display: none; /* Oculto por defecto */
+  opacity: 1;
+}
+.feature.has-icon .description .info {
+  min-height: 60px;
+}
+
 .feature.has-image img {
   max-width: 100%;
 }
@@ -2186,10 +2196,10 @@ hr {
 }
 
 #page-footer {
-  padding: 50px 0px;
+  padding: 0px 0px;
   position: relative;
 }
-#page-footer.background-is-dark:after {
+#page-footer.background-is-dark:before {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
   background: -moz-linear-gradient(top, transparent 0%, black 100%);
@@ -2197,13 +2207,13 @@ hr {
   background: linear-gradient(to bottom, transparent 0%, black 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000',GradientType=0 );
 }
-#page-footer:after {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+#page-footer:before {
+  
   opacity: 1;
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+  
   width: 100%;
   height: 150px;
   position: absolute;
@@ -2999,8 +3009,13 @@ form label {
 }
 form label.error {
   position: absolute;
-  bottom: -100%;
-  left: 0;
+  bottom: 44px;
+  left: 16px;
+  font-weight: 400;
+  color: red;
+}
+form label[for="form-contact-message"].error {
+  bottom: -26px;
 }
 form.inputs-underline input[type="text"], form.inputs-underline input[type="email"], form.inputs-underline input[type="date"], form.inputs-underline input[type="time"], form.inputs-underline input[type="search"], form.inputs-underline input[type="password"], form.inputs-underline input[type="number"], form.inputs-underline input[type="tel"], form.inputs-underline textarea.form-control {
   -webkit-appearance: none;

@@ -3511,6 +3511,7 @@ form .status i {
   }
   .navigation .right .navigation-links li a {
     padding: 5px 0px;
+    color: #ffffff;
   }
   .navigation .wrapper {
     padding: 20px 0;
@@ -3530,9 +3531,7 @@ form .status i {
     width: 100%;
     margin-top: 10px !important;
   }
-  .navigation-links .background-is-dark a {
-    color: #ffffff;
-  }
+  
   .floor-selector h2 {
     font-size: 14px;
   }

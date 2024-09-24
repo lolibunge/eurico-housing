@@ -3468,6 +3468,9 @@ form .status i {
     position: relative;
   }
 
+  .navigation.show-background .container{
+    background-color: #d6cfc8;
+  }
   .navigation.nav-btn-only .right .navigation-links {
     top: 50px;
     text-align: right;

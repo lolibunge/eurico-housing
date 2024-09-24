@@ -3468,7 +3468,7 @@ form .status i {
     position: relative;
   }
 
-  .navigation.show-background .container{
+  .page-wrapper.show-navigation .nav-btn:before{
     background-color: #d6cfc8;
   }
   .navigation.nav-btn-only .right .navigation-links {

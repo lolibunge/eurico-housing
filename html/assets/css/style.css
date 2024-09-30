@@ -36,7 +36,7 @@ Headers:		'Montserrat', sans-serif;
   z-index: 99;
 }
 .navigation.show-background {
-  background-color: #d6cfc8;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .navigation.show-background:hover {
   background-color: #d6cfc8;
@@ -131,6 +131,7 @@ Headers:		'Montserrat', sans-serif;
   transition: 0.5s ease;
   position: relative;
   padding: 5px 8px;
+  color: #fff;
 }
 .navigation .right .navigation-links li a:after {
   -moz-transition: 0.5s ease;
@@ -142,7 +143,7 @@ Headers:		'Montserrat', sans-serif;
   content: "";
   width: 0%;
   height: 2px;
-  background-color: #000;
+  background-color: #fff;
 }
 .navigation .right .navigation-links li a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -651,7 +652,7 @@ html, body {
   height: 100%;
 }
 
-p, address {
+p, address, .info {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
   line-height: 20px;
@@ -1620,7 +1621,7 @@ ul.check-marks li:before {
   opacity: 1;
 }
 .feature.has-icon .description .info {
-  min-height: 60px;
+  min-height: 80px;
 }
 
 .feature.has-image img {
@@ -2232,8 +2233,9 @@ hr {
   margin: 20px 0;
 }
 #page-footer .brand {
-  margin-bottom: 20px;
   display: block;
+  margin: 0 auto 20px;
+  text-align: center;
 }
 #page-footer .numbers {
   margin-top: 250px;

@@ -48,13 +48,13 @@ $(document).ready(function($) {
         $(".page-wrapper").removeClass("show-navigation");
     });
 
-    // $(window).scroll(function () {
-    //     if ($(window).scrollTop() > 1 ) {
-    //         $(".navigation").addClass("show-background");
-    //     } else {
-    //         $(".navigation").removeClass("show-background");
-    //     }
-    // });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 1 ) {
+            $(".navigation").addClass("show-background");
+        } else {
+            $(".navigation").removeClass("show-background");
+        }
+    });
 
 //  Responsive Video Scaling
 

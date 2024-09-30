@@ -3473,7 +3473,7 @@ form .status i {
     position: relative;
   }
 
-  .page-wrapper.show-navigation .nav-btn:before{
+  .navigation.show-background .container{
     background-color: #d6cfc8;
   }
   .navigation.nav-btn-only .right .navigation-links {
